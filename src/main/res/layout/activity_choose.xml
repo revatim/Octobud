@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context=".activities.ChooseActivity">
+
+    <TextView
+        android:id="@+id/sel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-30sp"
+        android:rotation="270"
+        android:text="Select One "
+        android:textSize="30sp" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="64dp"
+        android:stretchColumns="*"
+        android:weightSum="3">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="start"
+        android:padding="10sp"
+        android:layout_weight="1"
+        >
+
+
+        <ImageButton
+            android:id="@+id/alphabets"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/alphabets" />
+
+        <ImageButton
+            android:id="@+id/words"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/words" />
+
+        <ImageButton
+            android:id="@+id/sentences"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/sentences" />
+
+    </TableRow>
+        <TableRow
+            android:padding="10sp"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/poems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/poems" />
+
+            <ImageButton
+                android:id="@+id/colors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/colors" />
+
+            <ImageButton
+                android:id="@+id/manners"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/manners" />
+
+        </TableRow>
+        <TableRow
+            android:padding="10sp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <ImageButton
+                android:id="@+id/numbers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/numbers" />
+            <ImageButton
+                android:id="@+id/specialedition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/specialedition" />
+
+
+
+
+        </TableRow>
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+
+        android:layout_marginLeft="25sp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/settings" />
+
+
+</RelativeLayout>
