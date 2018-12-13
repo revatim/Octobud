@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.design.oswald">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UsersListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.OrientationActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.SerialActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.NameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.WelActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.ChooseActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".InfoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.AlphabetActivity"
+            android:screenOrientation="landscape" />
+
+        <activity android:name=".activities.Settings"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activities.WelcomeBackActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activities.SelectDifficulty"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.SelectDifficultyPage2"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.ColorsActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.MannersActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.PoemsActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.WordsActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.SentenceActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.NumbersActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.SpecialActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activities.BluetoothActivity"/>
+    </application>
+
+</manifest>
